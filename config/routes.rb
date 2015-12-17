@@ -1,9 +1,15 @@
 Rails.application.routes.draw do
+  get 'static_pages/promos'
+
+  devise_for :models
+  get 'static_pages/products'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   root 'index#hi'
+      
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
